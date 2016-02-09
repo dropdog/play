@@ -1,0 +1,5 @@
+div.highlighted {
+  @include clearfix;
+  @include grid-span(12, 1);
+  @include debug-highlighted;
+}

@@ -1,0 +1,40 @@
+header[role=banner] {
+/**
+ * The layout is inherited from the parent theme (_header.scss).
+ */
+
+  #block-rc-theme-branding {
+    @include breakpoint($desk) {
+      float: left;
+    }
+  }
+
+  #block-header-select-region,
+  #block-header-select-language,
+  #block-rc-theme-account-menu {
+    @include breakpoint($desk) {
+      float: right;
+      margin: 0 0.5em;
+    }
+  }
+
+  #block-rc-theme-account-menu {
+    ul {
+      @include horizontal-list;
+    }
+  }
+
+  #block-rc-theme-main-menu,
+  #block-header-mobilenavbuttondemo {
+    @include breakpoint($desk) {
+      float: right;
+      clear: right;
+    }
+  }
+
+  #block-rc-theme-breadcrumbs {
+    clear: both;
+    @include grid-span(12, 1);
+    padding-top: 20px;
+  }
+}

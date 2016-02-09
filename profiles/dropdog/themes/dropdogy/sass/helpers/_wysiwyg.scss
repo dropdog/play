@@ -1,0 +1,75 @@
+@include breakpoint($tab) {
+  /**
+    * Classes used in the CKEditor for Text columns.
+    */
+  .text-2-col {
+    margin: 0 auto;
+    @include column-count(2);
+    @include column-gap(4em);
+    @include column-rule-width(1px);
+    p, ul, ol {
+      margin-top: 0;
+    }
+  }
+
+  .text-3-col {
+    margin: 0 auto;
+    @include column-count(3);
+    @include column-gap(4em);
+    @include column-rule-width(1px);
+    p, ul, ol {
+      margin-top: 0;
+    }
+  }
+
+  /**
+    * Classes used in the CKEditor for Block columns.
+    */
+  .block-1-2-col {
+    @include clearfix;
+    > div {
+      @include grid-span(3, 1);
+    }
+
+    div:nth-of-type(2) {
+      @include grid-span(9, 4);
+    }
+  }
+
+  .block-2-1-col {
+    @include clearfix;
+    > div {
+      @include grid-span(9, 4);
+    }
+
+    div:nth-of-type(2) {
+      @include grid-span(3, 1);
+    }
+  }
+
+   .block-2-col {
+    @include clearfix;
+    > div {
+      @include grid-span(6, 1);
+    }
+
+    div:nth-of-type(2) {
+      @include grid-span(6, 7);
+    }
+  }
+
+  .block-3-col {
+    @include clearfix;
+    > div {
+      @include grid-span(4, 1);
+    }
+
+    div:nth-of-type(2) {
+      @include grid-span(4, 5);
+    }
+
+    div:nth-of-type(3) {
+      @include grid-span(4, 9);
+    }
+  }
+}

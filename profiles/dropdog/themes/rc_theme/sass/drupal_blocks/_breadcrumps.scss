@@ -1,0 +1,16 @@
+/**
+ * Breadcrumbs.
+ */
+#block-rc-theme-breadcrumbs {
+  ol {
+    @include horizontal-list;
+    li a:after {
+      content: ">";
+      padding-left: 0.3em;
+    }
+    li:last-child a:after {
+      content: none;
+      padding-left: 0;
+    }
+  }
+}

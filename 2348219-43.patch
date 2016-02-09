@@ -1,0 +1,13 @@
+diff --git a/core/lib/Drupal/Core/DrupalKernel.php b/core/lib/Drupal/Core/DrupalKernel.php
+index 06938a4..62513d0 100644
+--- a/core/lib/Drupal/Core/DrupalKernel.php
++++ b/core/lib/Drupal/Core/DrupalKernel.php
+@@ -765,7 +765,7 @@ public function updateModules(array $module_list, array $module_filenames = arra
+    *   The cache key used for the service container.
+    */
+   protected function getContainerCacheKey() {
+-    $parts = array('service_container', $this->environment, \Drupal::VERSION, Settings::get('deployment_identifier'));
++    $parts = array('service_container', $this->environment, \Drupal::VERSION, Settings::get('deployment_identifier'), serialize(Settings::get('container_yamls')));
+     return implode(':', $parts);
+   }
+ 

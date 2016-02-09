@@ -1,0 +1,12 @@
+/**
+ * Define the default grid, gutter and gutter style.
+ */
+@include add-grid(12);
+@include sgs-change('gutter styles', 'split' 'fixed');
+/* The gutter is added as margin within the containers. */
+@include add-gutter(1em);
+
+/* This is temporary. */
+body {
+  @include container(1200px);
+}

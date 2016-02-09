@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Install functions for the Mix Modules Up module.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function mmu_requirements($phase) {
+  $requirements = [];
+
+  if ($phase == 'runtime') {
+
+    if (!file_exists(MMU_LIBRARY_DIR . '/jquery.mixitup.min.js')) {
+      $requirements['mmu_library'] = [
+        'title' => t('MixItUp library'),
+        'value' => t('Not found'),
+        'severity' => REQUIREMENT_ERROR,
+        'description' => t(
+          'You need to download the <a href="!library_url">MixItUp library</a> and extract the <em>jquery.mixitup.min.js</em> file to the <em>mixitup</em> directory in the <em>libraries</em> directory on your server.',
+          ['!library_url' => 'https://mixitup.kunkalabs.com/']
+        ),
+      ];
+    }
+
+  }
+
+  return $requirements;
+}

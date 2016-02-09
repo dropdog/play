@@ -1,0 +1,47 @@
+main[role=main] {
+  clear: both;
+  @include clearfix;
+}
+
+/**
+ * Clear Grid at devices smaller than 48em
+ */
+.layout-two-sidebars .layout-content {
+  @include debug-main;
+  /**
+   * Specify grid for resolutions bigger than 48em (Mobile first) --- OVERRIDE
+   */
+	@include breakpoint(48em) {
+    @include grid-span(6, 4);
+  }
+}
+
+.layout-with-sidebar-first .layout-content {
+  @include debug-main;
+  /**
+   * Specify grid for resolutions bigger than 48em (Mobile first) --- OVERRIDE
+   */
+  @include breakpoint(48em) {
+    @include grid-span(9, 4);
+  }
+}
+
+.layout-with-sidebar-second .layout-content {
+  @include debug-main;
+  /**
+   * Specify grid for resolutions bigger than 48em (Mobile first) --- OVERRIDE
+   */
+  @include breakpoint(48em) {
+    @include grid-span(9, 1);
+  }
+}
+
+/**
+ * Clear Grid at devices smaller than 48em
+ */
+.layout-no-sidebars .layout-content {
+  @include grid-span(12, 1);
+  @include debug-main;
+}
+
+

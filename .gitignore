@@ -1,0 +1,97 @@
+# Ignore Drupal config folders
+# This is custom config folder set at DRUPAL_ROOT/local-dev/settings.local.php
+local-dev/config_customdev/*
+
+# Ignore files inside sites/ folder
+sites/default/settings.php
+sites/*/files
+sites/*/private
+
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+
+### PhpStorm ###
+*.iml
+.idea/
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+sftp-config.json
+ftpsync.settings
+
+### Composer ###
+composer.phar
+/vendor/
+composer.lock
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+.nb-gradle/
+
+
+### Eclipse ###
+*.pydevproject
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.project
+.externalToolBuilders/
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+### grunt ###
+dist/
+.tmp/
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+### Node ###
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.grunt
+.lock-wscript
+build/Release
+node_modules
+.npm
+.node_repl_history
+
+### Vagrant ###
+.vagrant/
+
+### Drush ###
+.drush
+drush
+

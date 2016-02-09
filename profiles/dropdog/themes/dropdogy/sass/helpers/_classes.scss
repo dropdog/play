@@ -1,0 +1,147 @@
+.show {
+  display: block !important;
+}
+
+.font-secondary {
+  font-family: $secondary-font;
+}
+
+/**
+ * Classes used in buttons.
+ */
+.btn {
+  padding: $default-atom-space;
+  text-decoration: none;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+.alt {
+  background-color: red;
+  &:hover {
+    background-color: rgba(red, 0.5);
+  }
+}
+
+.disabled {
+  background-color: gray;
+  &:hover {
+    background-color: rgba(gray, 0.5);
+  }
+}
+
+/**
+ * Class for bylines.
+ */
+.byline {
+  font-size: $base-font-size;
+  font-style: italic;
+}
+
+/**
+ * Classes for addresses.
+ */
+.vcard {
+  @include clearfix;
+  p {
+    margin: 0;
+  }
+}
+
+.org {
+  // For the company name.
+}
+
+.adr {
+  // Enclosing div of the address.
+}
+
+.street-address {
+  // For the street.
+}
+
+.locality {
+
+}
+
+.postal-code {
+
+}
+
+.region {
+
+}
+
+/**
+ * Classes for layout.
+ */
+ .primary-info {
+  @include breakpoint($desk) {
+    @include grid-span(6, 1);
+  }
+}
+
+.secondary-info {
+  @include breakpoint($desk) {
+    @include grid-span(6, 7);
+  }
+}
+
+/**
+ * Class to display labels as blocks.
+ */
+.label-block {
+  display: block;
+}
+
+/**
+ * Class for leading paragraphs.
+ */
+.leading {
+  font-size: ms(2);
+  font-style: italic;
+}
+
+/**
+ * Classes for system messages.
+ */
+.messages {
+  background: no-repeat 10px 17px;  /* LTR */
+  border: 1px solid;
+  border-width: 1px 1px 1px 0;  /* LTR */
+  border-radius: 2px;
+  padding: 15px 20px 15px 35px; /* LTR */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.messages + .messages {
+  margin-top: $default-atom-space;
+}
+
+.messages-status {
+  color: #325e1c;
+  @include color-info;
+  border-color: #c9e1bd #c9e1bd #c9e1bd transparent;  /* LTR */
+  background-image: url(../images/icons/check.svg);
+  box-shadow: -8px 0 0 #77b259; /* LTR */
+}
+
+.messages-warning {
+  @include color-warning;
+  background-image: url(../images/icons/warning.svg);
+  border-color: #f4daa6 #f4daa6 #f4daa6 transparent;  /* LTR */
+  color: #734c00;
+  box-shadow: -8px 0 0 #e09600; /* LTR */
+}
+
+.messages-error {
+  @include color-danger;
+  color: #a51b00;
+  background-image: url(../images/icons/error.svg);
+  border-color: #f9c9bf #f9c9bf #f9c9bf transparent;  /* LTR */
+  box-shadow: -8px 0 0 #e62600; /* LTR */
+}
+
+

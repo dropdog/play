@@ -1,0 +1,20 @@
+aside.layout-sidebar-secondtop {
+  @include debug-sidebartop;
+  /**
+   * Specify grid for resolutions bigger than 48em (Mobile first) --- OVERRIDE
+   */
+  @include breakpoint(48em) {
+    @include grid-span(3, 10);
+  }
+}
+
+aside.layout-sidebar-secondbottom {
+  @include debug-sidebarbottom;
+  /**
+   * Specify grid for resolutions bigger than 48em (Mobile first) --- OVERRIDE
+   */
+  @include breakpoint(48em) {
+    @include grid-span(3, 10);
+    clear: right;
+  }
+}

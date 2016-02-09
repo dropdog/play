@@ -1,0 +1,6 @@
+#bottom {
+  @include clearfix;
+  @include grid-span(12, 1);
+  clear: both;
+  @include debug-bottom;
+}

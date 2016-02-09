@@ -1,0 +1,104 @@
+*.sass-cache*
+
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+### PhpStorm ###
+*.iml
+.idea/
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp && ftp configuration file
+sftp-config.json
+ftpsync.settings
+
+### Composer ###
+composer.phar
+/vendor/
+composer.lock
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+.nb-gradle/
+
+
+### Eclipse ###
+*.pydevproject
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.project
+.externalToolBuilders/
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+### Css ###
+*.css
+
+### grunt ###
+dist/
+.tmp/
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+### Node ###
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.grunt
+.lock-wscript
+build/Release
+node_modules
+.npm
+.node_repl_history
+
+### Vagrant ###
+.vagrant/
+
+### Drush ###
+drush
+.drush
+
+### Unwanted Themes ###
+# rc_theme
+

@@ -1,0 +1,16 @@
+dropdogy:
+  version: VERSION
+  js:
+    # Custom Javascript file for your own JS modifications.
+    # Examples of behaviors in JS file.
+    js/dropdogy.js: {}
+
+  css:
+    theme:
+      # Custom CSS file to be loaded in all media circumstances
+      css/style.css: {}
+  dependencies:
+#      - core/modernizr
+#     - core/jquery
+#     - core/drupal
+#     - core/drupalSettings

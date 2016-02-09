@@ -1,0 +1,39 @@
+/**
+ * Breakpoint variables.
+ */
+/* The following declaration converts pxs to ems. */
+@include breakpoint-set('to ems', true);
+$phone-p: (min-width 320px) (max-width 768px) (orientation portrait); //(480px)
+$phone-l: (min-width 320px) (max-width 768px) (orientation landscape); //(480px)
+
+$tab: 768px;
+
+$tab-p: (screen) (min-width 768px) (max-width 1024px) (orientation portrait);
+$tab-l: (screen) (min-width 768px) (max-width 1024px) (orientation landscape);
+
+$desk: 1024px;
+
+/**
+ * Color variables.
+ */
+$base-color: #0061a1;
+$secondary-color: #fdb920;
+
+/**
+ * Typography variables.
+ */
+$primary-font: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+$secondary-font: "Georgia", "Times", "Times New Roman", serif;
+$base-font-size: 16px;
+$base-line-height: 24px;
+/* Modular Scale variables. */
+$ms-base: 1em;
+$ms-ratio: 1.33 $golden;
+
+/**
+ * Margin/padding variables.
+ */
+ $default-atom-space: 1em;
+ $default-mol-outer-space: 1em;
+ $default-mol-inner-space: $default-atom-space;
+

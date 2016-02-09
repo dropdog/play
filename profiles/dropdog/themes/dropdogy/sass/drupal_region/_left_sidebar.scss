@@ -1,0 +1,9 @@
+aside.layout-sidebar-first {
+  @include debug-sidebar1;
+  /**
+   * Specify grid for resolutions bigger than 48em (Mobile first) --- OVERRIDE
+   */
+  @include breakpoint(48em) {
+    @include grid-span(3, 1);
+  }
+}

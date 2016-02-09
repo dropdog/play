@@ -1,0 +1,107 @@
+/**
+ * The main navigation div.
+ */
+
+/* The fake button for the mobile menu. */
+#block-header-mobilenavbuttondemo {
+  width: 16px;
+  float: right;
+  @include breakpoint($tab) {
+    display: none;
+  }
+}
+
+#block-header-mobilenavbuttondemo:before {
+  border-bottom: 9px double #333;
+  border-top: 3px solid #333;
+  content: "";
+  height: 3px;
+  width: 16px;
+  display: block;
+  cursor: pointer;
+  margin: 0.25em 0;
+}
+
+#block-header-mobilenavbuttondemo:hover:before {
+  border-color: $base-color;
+}
+
+#block-rc-theme-main-menu {
+  /* Default mobile first styles. */
+
+  > ul {
+    padding: 0;
+    width: 100%;
+    display: none;
+    background-color: rgba(#fff, 0.4);
+    z-index: 102;
+    li {
+      list-style: none;
+      list-style-image: none;
+      width: 100%;
+      a {
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+        color: #333;
+        text-decoration: none;
+        @include transition(all, 0.3s, ease-in-out);
+        &.active:hover {
+          color: $base-color;
+        }
+        /* The class of the active link. */
+        &.active,
+        &.active-trail {
+          display: block;
+          color: $base-color;
+        }
+      }
+    }
+    /* Display the children when hovering over the parent link. */
+    li:hover > ul {
+      display: inline-block;
+    }
+  }
+
+  /* Overides for $tab and larger devices. */
+  @include breakpoint($tab) {
+    background: none;
+
+    > ul {
+      @include horizontal-list;
+      float: right;
+      width: auto;
+      position: relative;
+      display: block;
+      list-style: none;
+      list-style-image: none;
+      overflow: visible;
+      li {
+        width: auto;
+        display: block;
+        position: relative;
+        a {
+          padding: 10px 20px;
+        }
+      }
+
+      li:hover > ul {
+        background: #fff;
+        display: block;
+        position: absolute;
+        padding-left: 0;
+        top: 100%;
+      }
+      li:last-child:hover > ul{
+        right: 0;
+      }
+
+      ul {
+        display: none;
+      }
+    }
+  }
+}
+
+

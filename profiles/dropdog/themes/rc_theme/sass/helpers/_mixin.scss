@@ -1,0 +1,29 @@
+@mixin box-sizing {
+ -webkit-box-sizing: border-box !important;
+   -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+/**
+ * Restrict the container.
+ */
+@mixin container($width) {
+ max-width: $width;
+ margin: 0 auto;
+}
+
+/**
+ * List with right paddings and margins and no list style.
+ */
+@mixin list-no-style {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/**
+ * Use the following mixins for debugging.
+ */
+.demo-block {
+  border: 1px solid #666;
+  min-height: 3em;
+}

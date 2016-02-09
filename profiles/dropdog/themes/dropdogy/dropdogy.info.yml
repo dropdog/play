@@ -1,0 +1,31 @@
+name: Dropdogy
+type: theme
+description: 'A flexible theme with a responsive, mobile-first layout.'
+package: Core
+core: 8.x
+force_export: true
+libraries:
+  - dropdogy/dropdogy
+
+regions:
+  header: Header
+  highlighted: Highlighted
+  content: Content
+  sidebar_first: 'Sidebar First'
+  sidebar_secondtop: 'Sidebar Second Top'
+  sidebar_secondbottom: 'Sidebar Second Bottom'
+  bottom: 'Bottom'
+  footer: 'Footer'
+
+features:
+  logo: true
+  name: true
+  slogan: true
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  main_menu: true
+  secondary_menu: true
+
+

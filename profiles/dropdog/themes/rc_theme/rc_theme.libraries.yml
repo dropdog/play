@@ -1,0 +1,16 @@
+rc_theme:
+  version: VERSION
+  js:
+    # Custom Javascript file for your own JS modifications.
+    # Examples of behaviors in JS file.
+    js/rc_theme.js: {}
+
+  css:
+    theme:
+      # Custom CSS file to be loaded in all media circumstances
+      css/rc_styles.css: {}
+  dependencies:
+#      - core/modernizr
+#     - core/jquery
+#     - core/drupal
+#     - core/drupalSettings

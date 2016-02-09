@@ -1,0 +1,37 @@
+header[role=banner] {
+  @include grid-span(12, 1);
+  @include clearfix;
+  @include debug-header;
+
+  #block-dropdogy-branding {
+    @include breakpoint($desk) {
+      @include grid-span(3, 1);
+    }
+  }
+
+  #block-header-select-region,
+  #block-header-select-language,
+  #block-dropdogy-account-menu {
+    @include breakpoint($desk) {
+      float: right;
+      margin: 0 0.5em;
+    }
+  }
+
+  #block-dropdogy-account-menu {
+    ul {
+      @include horizontal-list;
+    }
+  }
+
+  #block-mainnavigation {
+    @include breakpoint($desk) {
+      @include grid-span(9, 4);
+      clear: right;
+    }
+  }
+
+  #block-dropdogy-breadcrumbs {
+    clear: both;
+  }
+}

@@ -1,0 +1,6 @@
+anonymous: Anonymous
+verify_mail: true
+register: admin_only
+cancel_method: user_cancel_block
+langcode: en
+password_strength: true

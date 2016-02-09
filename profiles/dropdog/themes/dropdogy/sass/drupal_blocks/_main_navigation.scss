@@ -1,0 +1,108 @@
+/**
+ * The main navigation div.
+ */
+#block-mainnavigation {
+  /* Default mobile first styles. */
+  text-align: right;
+
+  /* The fake button for the mobile menu. */
+  &:before {
+    border-bottom: 9px double #333;
+    border-top: 3px solid #333;
+    content: "";
+    height: 3px;
+    width: 18px;
+    display: block;
+    cursor: pointer;
+    margin: 24px;
+    float: right;
+    @include breakpoint($tab) {
+      display: none;
+    }
+  }
+  &:hover:before{
+    border-color: $base-color;
+  }
+
+  > ul {
+    margin-top: 60px;
+    padding: 0;
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgba(#fff, 0.4);
+    z-index: 102;
+    li{
+      list-style: none;
+      list-style-image: none;
+      width: 100%;
+      a {
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+        color: #333;
+        text-decoration: none;
+        @include transition(all, 0.3s, ease-in-out);
+        &.active:hover {
+          color: $base-color;
+        }
+        /* The class of the active link. */
+        &.active,
+        &.active-trail {
+          display: block;
+          color: $base-color;
+        }
+      }
+    }
+    /* Display the children when hovering over the parent link. */
+    li:hover > ul {
+      display: inline-block;
+      padding-left: 1em ;
+    }
+  }
+
+  /* Overides for $tab and larger devices. */
+  @include breakpoint($tab) {
+    background: none;
+    /* Hide all children. */
+    > ul {
+      /*@include list-no-style;*/
+      float: right;
+      width: auto;
+      position: relative;
+      display: block;
+      list-style: none;
+      list-style-image: none;
+      /* Create the horizontal list. */
+      @include horizontal-list;
+      overflow: visible ;
+      li {
+        width: auto;
+        display: block;
+        position: relative;
+        a {
+          padding: 10px 20px;
+        }
+      }
+
+      li:hover > ul {
+        background: #fff;
+        display: block;
+        position: absolute;
+        padding-left: 0;
+        top: 100%;
+      }
+      li:last-child:hover > ul{
+        right: 0;
+      }
+
+      ul {
+        display: none;
+      }
+    }
+  }
+}
+
+

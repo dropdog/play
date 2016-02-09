@@ -1,0 +1,8 @@
+#block-dropdogy-local-tasks {
+  /* Hide the tab trigger for devices bigger than tab. */
+  @include breakpoint($tab) {
+    .tabs__trigger {
+      display: none;
+    }
+  }
+}

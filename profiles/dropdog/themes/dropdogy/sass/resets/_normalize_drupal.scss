@@ -1,0 +1,191 @@
+/* Typography
+   ========================================================================== */
+h1 {
+  font-size: ms(6);
+}
+
+h2 {
+  font-size: ms(5);
+}
+
+h3 {
+  font-size: ms(4);
+}
+
+h4 {
+  font-size: ms(3);
+}
+
+h5 {
+  font-size: ms(2);
+}
+
+h6 {
+  font-size: ms(1);
+}
+
+p {
+  font-size: ms(0);
+  font-family: $primary-font;
+  line-height: ms(0)*1.35;
+}
+
+/* Various
+   ========================================================================== */
+
+label {
+  padding-bottom: $default-atom-space;
+}
+
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=url],
+input[type=number],
+input[type=email],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=datetime],
+input[type=datetime-local],
+input[type=newsletter],
+textarea {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 1px solid $base-color;
+  padding: ($default-atom-space);
+  margin: $default-atom-space 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Tabs */
+.tabs {
+  @include horizontal-list;
+  border-bottom: 1px solid $base-color;
+
+  li {
+    text-align: center;
+    a {
+      color: #FFF;
+      &:hover {
+        background: $base-color;
+      }
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+/* Background color classes. */
+.bg-primary {
+  background-color: $base-color;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+.bg-info {
+  background-color: $color-info;
+}
+
+.bg-success {
+  background-color: $color-success;
+}
+
+.bg-warning {
+  background-color: $color-warning;
+}
+
+.bg-danger {
+  background-color: $color-danger;
+}
+
+/* Background grayscale classes. */
+.bg-gray {
+  background-color: $gray;
+}
+
+.bg-gray-light {
+  background-color: $gray-light;
+}
+
+.bg-gray-lighter {
+  background-color: $gray-lighter;
+}
+
+.bg-gray-dark {
+  background-color: $gray-dark;
+}
+
+.bg-gray-darker {
+  background-color: $gray-darker;
+}
+
+
+/* Text colors. */
+/* Classes for special cases. */
+.text-white {
+  color: #FFF;
+}
+
+.text-muted {
+    opacity: 0.5;
+}
+/* End of classes for special cases. */
+
+.text-primary {
+  color: $base-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-info {
+  color: $color-info;
+}
+
+.text-success {
+  color: $color-success;
+}
+
+.text-warning {
+  color: $color-warning;
+}
+
+.text-danger {
+  color: $color-danger;
+}
+
+/* Text grayscale classes. */
+.text-gray {
+  color: $gray;
+}
+
+.text-gray-light {
+  color: $gray-light;
+}
+
+.text-gray-lighter {
+  color: $gray-lighter;
+}
+
+.text-gray-dark {
+  color: $gray-dark;
+}
+
+.text-gray-darker {
+  color: $gray-darker;
+}
+
+

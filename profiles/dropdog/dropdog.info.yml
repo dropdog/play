@@ -1,0 +1,48 @@
+name: Dropdog
+type: profile
+description: 'Dropdog is a drupal dog!'
+version: 1.0
+core: 8.x
+
+# The distribution_name property is used in the installer and other places as
+# a label for the software being installed.
+distribution_name: Dropdog
+
+# Mark this as an 'exclusive' profile, so if it's the only one, it gets auto-
+# selected by default.
+exclusive: 1
+
+dependencies:
+  # Core
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - contextual
+  - editor
+  - field
+  - field_ui
+  - file
+  - filter
+  - link
+  - menu_link_content
+  - menu_ui
+  - node
+  - path
+  - system
+  - text
+  - toolbar
+  - user
+  - views
+  - views_ui
+
+  # Contrib
+  - features
+  - features_ui
+  - config_update
+  - config_update_ui
+
+# Themes
+themes:
+  - seven
+  - rc_theme
