@@ -1,0 +1,10 @@
+required:
+  - core.base_field_override.taxonomy_term.vocabularyone.description
+  - core.base_field_override.taxonomy_term.vocabularyone.path
+  - core.base_field_override.taxonomy_term.vocabularytwo.description
+  - core.base_field_override.taxonomy_term.vocabularytwo.path
+  - language.content_settings.taxonomy_term.vocabularyone
+  - language.content_settings.taxonomy_term.vocabularytwo
+  - field.field.node.ctypeone.field_ctypeone_vocabulary_one
+  - taxonomy.vocabulary.vocabularyone
+  - taxonomy.vocabulary.vocabularytwo

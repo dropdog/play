@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.needs_review
+_core:
+  default_config_hash: j1sIENWZcY8kbPuTc76FVRU_h_OBgya2YBf74WafRgU
+id: needs_review_needs_review
+label: 'Keep in Review'
+stateFrom: needs_review
+stateTo: needs_review
+weight: -7

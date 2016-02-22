@@ -1,0 +1,11 @@
+required:
+  - language.mappings
+  - language.negotiation
+  - language.types
+  - language.entity.de
+  - language.entity.el
+  - language.entity.en
+  - language.entity.ru
+  - language.entity.und
+  - language.entity.zh-hans
+  - language.entity.zxx

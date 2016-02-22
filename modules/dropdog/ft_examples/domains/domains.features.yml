@@ -1,0 +1,3 @@
+required:
+  - domain.record.domain_1_backend_gr
+  - domain.record.region1_backend_gr

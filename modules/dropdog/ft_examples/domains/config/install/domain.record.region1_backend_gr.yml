@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: region1_backend_gr
+domain_id: 1
+hostname: region1.backend.gr
+name: region1.backend.gr
+scheme: http
+weight: 1
+is_default: false

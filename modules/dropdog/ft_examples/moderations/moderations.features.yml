@@ -1,0 +1,13 @@
+required:
+  - workbench_moderation.moderation_state.archived
+  - workbench_moderation.moderation_state.draft
+  - workbench_moderation.moderation_state.needs_review
+  - workbench_moderation.moderation_state.published
+  - workbench_moderation.moderation_state_transition.draft_draft
+  - workbench_moderation.moderation_state_transition.draft_needs_review
+  - workbench_moderation.moderation_state_transition.draft_published
+  - workbench_moderation.moderation_state_transition.needs_review_needs_review
+  - workbench_moderation.moderation_state_transition.needs_review_published
+  - workbench_moderation.moderation_state_transition.published_archived
+  - workbench_moderation.moderation_state_transition.published_draft
+  - workbench_moderation.moderation_state_transition.published_published

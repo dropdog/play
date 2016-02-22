@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.draft
+    - workbench_moderation.moderation_state.published
+_core:
+  default_config_hash: kweMfCjpfR4IpWygZ3YXL3WtLGAff4SEfrHNFnGHz44
+id: draft_published
+label: Publish
+stateFrom: draft
+stateTo: published
+weight: -8

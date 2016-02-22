@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.draft
+_core:
+  default_config_hash: K9GhyRidJgwgBaWuW9i_NAkfgyz4VP94F9IAd5GJlCI
+id: draft_draft
+label: 'Create New Draft'
+stateFrom: draft
+stateTo: draft
+weight: -10

@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.draft
+    - workbench_moderation.moderation_state.needs_review
+_core:
+  default_config_hash: cH7NpM8Sh6KfgDja1hiDoARm60xLpAmrei0Fq_l_Bn8
+id: draft_needs_review
+label: 'Request Review'
+stateFrom: draft
+stateTo: needs_review
+weight: -9

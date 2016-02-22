@@ -1,0 +1,6 @@
+name: moderations
+type: module
+core: 8.x
+dependencies:
+  - workbench_moderation
+version: 8.x-1.0

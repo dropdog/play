@@ -1,0 +1,19 @@
+langcode: el
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vocabularyone
+  module:
+    - path
+id: taxonomy_term.vocabularyone.path
+field_name: path
+entity_type: taxonomy_term
+bundle: vocabularyone
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
