@@ -1,15 +1,18 @@
 ### Description
 
-### How ro reproduct the error
+### How to reproduce the error
 
 ### Related issues
+None.
 
 ### Related commits
+None.
 
 ### System status and environment details
+None - Default.
 
-### List of proposals:
+### How to fix it
 
- - [ ] One
- - [ ] Two
- - [ ] Three
+ - One
+ - Two
+ - Three
